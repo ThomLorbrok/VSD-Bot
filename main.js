@@ -27,7 +27,7 @@ bot.on('message', message => {
     .addField("Utilisateur sur le discord", message.guild.memberCount)
     .setColor("0x0000FF")
  message.channel.sendEmbed(embed);
-}
+})
 
    
 // Commande de modération //
@@ -39,4 +39,4 @@ if(message.content === prefix + "clear"){
             }, function(err){message.channel.send("Erreur")})
     message.channel.send('vous avez réussie à vider le salon.')}
             console.log("La commande clear viens d'être effectué par un membre de l'équipe.")
-        }
+        })
