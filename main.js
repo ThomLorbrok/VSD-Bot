@@ -27,8 +27,7 @@ bot.on('message', message => {
     .addField("Utilisateur sur le discord", message.guild.memberCount)
     .setColor("0x0000FF")
  message.channel.sendEmbed(embed);
-
-});
+}
 
    
 // Commande de modération //
