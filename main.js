@@ -28,15 +28,3 @@ bot.on('message', message => {
     .setColor("0x0000FF")
  message.channel.sendEmbed(embed);
 })
-
-   
-// Commande de modération //
-if(message.content === prefix + "clear"){
-    if (message.member.hasPermission("MANAGE_MESSAGES")){
-        message.channel.fetchMessages()
-            .then(function(list){
-                message.channel.bulkDelete(list);
-            }, function(err){message.channel.send("Erreur")})
-    message.channel.send('vous avez réussie à vider le salon.')}
-            console.log("La commande clear viens d'être effectué par un membre de l'équipe.")
-        })
