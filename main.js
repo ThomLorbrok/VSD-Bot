@@ -41,4 +41,3 @@ if(message.content === prefix + "clear"){
     message.channel.send('vous avez réussie à vider le salon.')}
             console.log("La commande clear viens d'être effectué par un membre de l'équipe.")
         }
-}
