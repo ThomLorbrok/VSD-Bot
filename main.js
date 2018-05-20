@@ -1,17 +1,18 @@
 const Discord = require('discord.js');
+const bot = new Discord.Client();
 
-var bot = new Discord.Client();
 var prefix = ("*");
 
+
+bot.login(process.env.TOKEN);
+
 bot.on('ready', () => {
-    console.log("Prêt à travailler chef ");
+    console.log("EN LIGNE");
 });
 
 bot.on('ready', () => {
     bot.user.setActivity(" *help | VSD'Bot")
     });
-
-bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
